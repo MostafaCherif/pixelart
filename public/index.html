@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        PixelArt
+    </title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/pixelart.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div class="controls">
+        X : <span id="var-x-coord"> </span>
+        <br>
+        Y : <span id="var-y-coord"> </span>
+        <br>
+        Color : <button id="red">
+            <div class="red small"></div>
+        </button> <button id="orange">
+            <div class="orange small"></div>
+        </button> <button id="yellow">
+            <div class="yellow small"></div>
+        </button> <button id="green">
+            <div class="green small"></div>
+        </button> <button id="blue">
+            <div class="blue small"></div>
+        </button> <button id="indigo">
+            <div class="indigo small"></div>
+        </button> <button id="violet">
+            <div class="violet small"></div>
+        </button> <button id="black">
+            <div class="black small"></div>
+        </button> <button id="white">
+            <div class="white small"></div>
+        </button>
+        <br>
+    </div>
+
+    <div class="relative">
+        <canvas id="pixelart" height="512" width="512" class="front"></canvas>
+        <div class="back invisible" id="inv_rect">
+        </div>
+    </div>
+
+</body>
+
+</html>
